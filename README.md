@@ -7,17 +7,17 @@ This is simple credit card visualizer with jQuery & TailwindCSS
 **Development**
 
 ```sh
-npm run dev // vite
+npm run dev # vite
 ```
 
 **Build**
 
 ```sh
-npm run build // vite build
+npm run build # vite build
 ```
 
 **Serve**
 
 ```sh
-npm run serve // vite serve
+npm run serve # vite serve
 ```
