@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Plus Jakarta Display";
+  src: url("fonts/PlusJakartaDisplay-Medium.woff2") format("woff2"),
+    url("fonts/PlusJakartaDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Display";
+  src: url("fonts/PlusJakartaDisplay-Regular.woff2") format("woff2"),
+    url("fonts/PlusJakartaDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+button {
+  @apply bg-black text-white font-medium rounded-full w-full py-2 mt-2;
+}
+
+label {
+  @apply block mb-2 font-medium;
+}
+
+select, input {
+  @apply w-full border rounded-lg p-2 focus:outline-none focus:ring-2;
+}
+
+input.error, select.error {
+  @apply ring-2 ring-red-500 focus:ring-blue-400;
+}
+
+p.error {
+  @apply text-red-500;
+}
+
+.form-field {
+  @apply my-2;
+}
+
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

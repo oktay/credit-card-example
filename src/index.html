@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="max-w-md min-h-screen mx-auto p-4 flex items-center">
+        <div>
+          <h1 class="text-2xl font-medium mb-6">
+            Fill this form with your payment information
+          </h1>
+          <div class="border rounded-lg p-6 text-lg text-gray-400">
+            <p class="font-medium">CREDIT CARD</p>
+            <div class="my-8">
+              <p class="js-name uppercase font-medium">Name Surname</p>
+              <p class="js-number font-mono">XXXX XXXX XXXX XXXX</p>
+            </div>
+            <div class="flex justify-between font-mono">
+              <p>
+                <span class="js-expire-month">XX</span>
+                <span>/</span>
+                <span class="js-expire-year">XXXX</span>
+              </p>
+              <p class="js-cvv">XXX</p>
+            </div>
+          </div>
+          <form action="submit" class="mt-4">
+            <div class="form-field">
+              <label for="name">Name Surname</label>
+              <input
+                class="capitalize"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Doe"
+                data-inputmask-regex="[a-zA-Z- ]*"
+              />
+            </div>
+            <div class="form-field">
+              <label for="number">Card Number</label>
+              <input
+                type="text"
+                name="number"
+                id="number"
+                placeholder="9999 9999 9999 9999"
+                data-inputmask="'mask': '9999 9999 9999 9999'"
+              />
+            </div>
+            <div class="form-field">
+              <label>Expire Date</label>
+              <div class="flex">
+                <div class="flex-1">
+                  <select name="month" id="expire_month">
+                    <option value="">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+                <div class="flex-1 ml-2">
+                  <select name="year" id="expire_year">
+                    <option value="">Year</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="cvv">CVV</label>
+              <input
+                type="text"
+                name="cvv"
+                id="cvv"
+                placeholder="999"
+                data-inputmask="'mask': '999'"
+                data-inputmask-showMaskOnHover="false"
+                data-inputmask-showMaskOnFocus="false"
+              />
+            </div>
+            <button>Checkout</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
