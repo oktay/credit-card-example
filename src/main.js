@@ -49,7 +49,7 @@ $("form").validate({
   errorElement: "p",
   rules: {
     number: {
-      minlength: 16,
+      minlength: 18,
     },
     cvv: {
       minlength: 3,
