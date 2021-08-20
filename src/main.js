@@ -40,7 +40,7 @@ new Simulate({
 
 new Simulate({
   event: "change",
-  el: "#expire_month",
+  el: "#expire_year",
   changeEl: ".js-expire-year",
   placeholder: "XXXX",
 }).watch();
