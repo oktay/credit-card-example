@@ -38,6 +38,7 @@
                 id="name"
                 placeholder="John Doe"
                 data-inputmask-regex="[a-zA-Z- ]*"
+                required
               />
             </div>
             <div class="form-field">
@@ -48,13 +49,14 @@
                 id="number"
                 placeholder="9999 9999 9999 9999"
                 data-inputmask="'mask': '9999 9999 9999 9999'"
+                required
               />
             </div>
             <div class="form-field">
               <label>Expire Date</label>
               <div class="flex">
                 <div class="flex-1">
-                  <select name="month" id="expire_month">
+                  <select name="month" id="expire_month" required>
                     <option value="">Month</option>
                     <option value="01">01</option>
                     <option value="02">02</option>
@@ -71,7 +73,7 @@
                   </select>
                 </div>
                 <div class="flex-1 ml-2">
-                  <select name="year" id="expire_year">
+                  <select name="year" id="expire_year" required>
                     <option value="">Year</option>
                     <option value="2021">2021</option>
                     <option value="2022">2022</option>
@@ -92,6 +94,7 @@
                 data-inputmask="'mask': '999'"
                 data-inputmask-showMaskOnHover="false"
                 data-inputmask-showMaskOnFocus="false"
+                required
               />
             </div>
             <button>Checkout</button>
